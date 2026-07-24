@@ -1,0 +1,22 @@
+{
+  "name": "eml2pdf-backend",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Paywall backend for the EML to PDF Chrome extension: Google sign-in verification, Dodo Payments checkout + webhook, credits ledger.",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node --watch server.js",
+    "migrate": "node db/migrate.js"
+  },
+  "dependencies": {
+    "dodopayments": "^1.53.2",
+    "express": "^4.19.2",
+    "google-auth-library": "^9.15.1",
+    "pg": "^8.22.0",
+    "standardwebhooks": "^1.0.0"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}
