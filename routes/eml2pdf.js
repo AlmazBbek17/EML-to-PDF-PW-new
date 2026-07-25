@@ -84,7 +84,7 @@ module.exports = function eml2pdfRoutes(pool) {
       const session = await createCheckoutSession({
         productId: product.dodoProductId,
         customerEmail: email,
-        returnUrl: returnUrl || 'https://eml-to-pdf-paywall-production.up.railway.app/thanks',
+        returnUrl: returnUrl || 'https://eml-to-pdf-pw-new-production.up.railway.app/thanks',
       });
       res.json({ checkoutUrl: session.checkout_url });
     } catch (err) {
